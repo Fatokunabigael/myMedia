@@ -1,0 +1,115 @@
+.picture {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+#birthday {
+    background-color: white;
+    width: 400px;
+    height: 300px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 30px .5
+}
+
+body {
+    background-color: gray;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+    margin: 0 auto;
+}
+
+/* media query */
+.nav-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+}
+
+.hamburger {
+    width: 20px;
+}
+
+.hamburger-link {
+    border-top: 2px solid white;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.navbar,
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar,
+ul,
+li {
+
+    padding: 5px;
+    color: white;
+    text-decoration-color: none;
+
+}
+
+.hamburger {
+    visibility: hidden;
+}
+
+/* media query for navbar */
+@media (max-width:768px) {
+    .hamburger {
+        visibility: visible;
+    }
+
+    .navbar {
+        display: none;
+    }
+}
+
+.container-lookup {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.small {
+    padding: 10px;
+    margin: 10px;
+    background-color: #efefef;
+    box-sizing: border-box;
+    border-radius: 5px;
+    align-items: center;
+    text-align: center;
+
+}
+
+/* media query rule on divs */
+@media (max-width:768px) {
+    .container-lookup {
+        width: 100%;
+        display: block;
+        margin: 10px;
+        background-color: white;
+    }
+
+    .small {
+        width: 90%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background-color: gray;
+    }
+
+}
